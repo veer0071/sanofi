@@ -17,7 +17,7 @@ jobs:
       uses: docker/setup-buildx-action@v1
 
     - name: Log in to ACR
-      run: echo "veer12345@" | docker login -u veereshukotagi001@gmail.com --password-stdin sanofiimageregistry.azurecr.io
+      run: docker login -u sanofiimageregistry -p 7SafQA4unjXcX/5FgPX5qinNbNcI+VOeYtITyufuKJ+ACRA0RA5u sanofiimageregistry.azurecr.io
 
     - name: Build and push Docker image
       run: |
